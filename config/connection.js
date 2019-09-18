@@ -1,7 +1,7 @@
 var mysql =  require("mysql");
 let connection;
 // REad and set the environment
-require("dotenv").config();
+
 // define database connection
 if (process.env.JAWSDB_URL){
     // Deployment to Heroku
@@ -15,7 +15,7 @@ else {
         port: 3306,
         user: "root",
         password: "root",
-        database: "burgers_db"
+        database: "burgers"
 });
 };
 

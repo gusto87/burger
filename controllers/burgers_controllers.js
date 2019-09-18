@@ -13,12 +13,12 @@ router.get("/", function(req, res){
         };
         console.log(hbsObject);
         res.render("index", hbsObject);
-
     });
 });
 
 // Post route to create/add a burger.
 router.post("/api/burgers", function(req, res){
+    console.log (req.body.burger_name)
     burger.create([
         "burger_name", "devoured"
     ],[
