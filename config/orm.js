@@ -48,8 +48,8 @@ var orm = {
         });
     },
     //select all function/query
-     insert: function(table, cols, vals, cb) {
-        var queryString = "INSERT INTO" + table;
+     create: function(table, cols, vals, cb) {
+        var queryString = `INSERT INTO ${table}`;
 
         queryString += " (";
         queryString += cols.toString();

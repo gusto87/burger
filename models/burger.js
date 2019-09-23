@@ -6,6 +6,7 @@ console.log('what is orm as imported from config/orm?', orm)
 var burger = {
   //Select all burgers from database.
   all: function(cb) {
+    console.log('hitting all function')
     orm.all("burgers", function(res) {
       cb(res);
     })
