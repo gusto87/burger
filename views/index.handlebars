@@ -1,8 +1,8 @@
 <div class="container">
   <!--Jumbotron-->
   <div class="jumbotron text-center bg-secondary text-white">
-    <h1 class="display-4" id="app-title">Good Burger<img src=""></h1>
-    <p class="lead">Welcome to Good Burger. Home of the Good Burger. Can I take your order?</p>
+    <h1 class="display-4" id="app-title">Big Kahuna Burger<img src=""></h1>
+    <p class="lead">This is a tasty burger! Can I take your order?</p>
   </div>
 
   <div class="row">
@@ -51,7 +51,7 @@
         <!--When a burger has been devoured, put burger here-->
         <div class="card-body">
           {{#each burgers}}
-              {{#if devoured}}
+              {{#if this.devoured}}
                 {{> burgers/burger-devoured devour=true}}
               {{/if}}
           {{/each}}
@@ -65,7 +65,7 @@
     <div class="col-md-12">
       <div class="card footer">
         <div class="card-body footer-body text-white">
-          <h5 class="card-title text-white">Good Burger</h5>
+          <h5 class="card-title text-white">Big Kahuna Burger</h5>
           <p class="card-text">Also Try Our Special Secret Sauce!</p>
           <a href="https://github.com/gusto87" class="btn btn-primary mr-2" target="_blank">Github Repo</a>
           <a href="https://www.linkedin.com/in/william-sherrill-b04b20127/" class="btn btn-primary" target="_blank">LinkedIn</a>
